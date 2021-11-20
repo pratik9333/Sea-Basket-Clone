@@ -1,0 +1,19 @@
+.logo {
+  width: 183px;
+  height: 63px;
+}
+.nav-btn {
+  background-color: #0e79bd;
+  color: #fff;
+}
+.nav-item {
+  margin-right: 32px;
+}
+.nav-item button {
+  width: 190px;
+  border-radius: 7px;
+}
+.navbar-light .navbar-nav .nav-link {
+  font-weight: bold;
+  color: #0e79bd;
+}

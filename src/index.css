@@ -1,13 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  color: #000;
+  background-color: #fff;
+}
+h1 {
+  font-size: 42px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 26px;
+  letter-spacing: 0.09em;
+  color: #000000;
+  font-weight: bold;
+}
+P {
+  font-weight: bold;
+}
+.card {
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.card-body {
+  padding: 25px 10px 10px 20px;
+}
+.card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.card-text {
+  font-weight: normal;
+  margin-top: 40px;
+}
+.faq-block {
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 32px 0px 25px 0px;
+}
+.read-more {
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #0e79bd;
+  float: right;
+  margin-top: 20px;
+}
+.read-More {
+  padding: 19px 25px;
+}
+.image {
+  height: 298px;
+  border-radius: 31px;
+  background: url("./Assets/Images/Topics/topic1.jpg") no-repeat center
+    center/cover;
+}
+.topic {
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #0e79bd;
+}
+.footer {
+  background: #0e79bd;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.footer-content {
+  width: 90%;
+  max-width: 1920px;
+  margin: auto;
 }
