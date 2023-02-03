@@ -28,7 +28,7 @@ const WebFooter = () => {
         </Row>
         <Row className="mt-5 pb-3">
           <Col className="text-white text-center font-weight-light">
-            <p>Sea Basket I All Rights Reserved I 2021 Copyright</p>
+            <p>Sea Basket I All Rights Reserved I 2023 Copyright</p>
           </Col>
         </Row>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 import up from "../Assets/Images/navigation/up.png";
 import down from "../Assets/Images/navigation/down.png";
-import { Collapse, Card, CardBody, Row, Col } from "reactstrap";
+import { Collapse, Row, Col } from "reactstrap";
 
 const FAQ = ({ collapseTitle, collapseBody }) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -14,10 +14,10 @@ const FAQ = ({ collapseTitle, collapseBody }) => {
     >
       <div>
         <Row className="align-items-center text-center">
-          <Col md="8 ">
+          <Col md="10">
             <p
               style={{
-                paddingLeft: "56px",
+                padding: "0px 20PX",
                 textAlign: "left",
                 position: "relative",
                 top: "5px",
@@ -26,11 +26,11 @@ const FAQ = ({ collapseTitle, collapseBody }) => {
               {collapseTitle}
             </p>
           </Col>
-          <Col md="4">
+          <Col md="2">
             <img
               src={isOpen ? up : down}
               alt="down"
-              style={{ width: "40px", height: "50px" }}
+              style={{ width: "30px", height: "35px", cursor: "pointer" }}
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
@@ -39,8 +39,8 @@ const FAQ = ({ collapseTitle, collapseBody }) => {
         </Row>
       </div>
       <Collapse isOpen={isOpen}>
-        <div className="mt-5 pt-3 px-5">
-          <div>{collapseBody}</div>
+        <div className="mt-5 pt-3 px-4">
+          <span>{collapseBody}</span>
         </div>
       </Collapse>
     </div>

@@ -16,21 +16,41 @@ import fish from "../Assets/Images/Header/below-navbar.svg";
 import product from "../Assets/Images/Products/product.png";
 
 const Home = () => {
-  const [category, setCategory] = useState([]);
+  const [category, setCategory] = useState([
+    {
+      title: "Dang Fish",
+      image:
+        "https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_1280.jpg",
+    },
+    {
+      title: "Seatle Fish",
+      image:
+        "https://cdn.pixabay.com/photo/2021/03/14/11/14/fish-6093991_1280.jpg",
+    },
+    {
+      title: "Corona Fish",
+      image:
+        "https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg",
+    },
+  ]);
 
   useEffect(() => {
-    getCategories().then((data) => {
-      if (data.error) {
-        console.log(data.error);
-      } else {
-        setCategory(data);
-      }
-    });
+    // getCategories()
+    //   .then((data) => {
+    //     if (data.error) {
+    //       console.log(data.error);
+    //     } else {
+    //       setCategory(data);
+    //     }
+    //   })
+    //   .catch((err) => {
+    //     alert(err);
+    //   });
   }, []);
 
   return (
     <Fragment>
-      <div className="header">
+      <div className="header text-center">
         <NavB />
         <img
           src={fish}
@@ -55,7 +75,7 @@ const Home = () => {
           {category.map((category) => (
             <Col md="3" className="gy-5">
               <Category
-                cardimg={`${API}/category/${category._id}`}
+                cardimg={category.image}
                 cardtitle={category.title}
                 cardimgalt={category.title}
               />

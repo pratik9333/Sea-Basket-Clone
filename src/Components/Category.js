@@ -5,17 +5,16 @@ import { Card, CardImg, CardBody, CardTitle } from "reactstrap";
 const Category = ({ cardimg, cardtitle, cardimgalt }) => {
   return (
     <Fragment>
-      <Card className="text-center">
+      <Card className="text-center" style={{ cursor: "pointer" }}>
         <CardImg
           alt={cardimgalt}
           src={cardimg}
           top
           style={{
-            width: "100%",
-            maxWidth: "205px",
-            maxHeight: "100px",
+            width: "-webkit-fill-available",
             alignSelf: "center",
-            marginTop: "10px",
+            borderRadius: "21px",
+            height: "200px",
           }}
         />
         <CardBody>
