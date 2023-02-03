@@ -1,0 +1,22 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "title": "Dang Fish",
+      "image":
+        "https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_1280.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Seatle Fish",
+      "image":
+        "https://cdn.pixabay.com/photo/2021/03/14/11/14/fish-6093991_1280.jpg"
+    },
+    {
+    "id": 3,
+      "title": "Corona Fish",
+      "image":
+        "https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg"
+    }
+  ]
+}

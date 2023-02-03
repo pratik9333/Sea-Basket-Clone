@@ -9,43 +9,28 @@ import FAQ from "../Components/FAQ";
 
 //API
 import { getCategories } from "../API/categories";
-import API from "../backend";
 
 //Images
 import fish from "../Assets/Images/Header/below-navbar.svg";
 import product from "../Assets/Images/Products/product.png";
 
+//json-server --watch db.json
+
 const Home = () => {
-  const [category, setCategory] = useState([
-    {
-      title: "Dang Fish",
-      image:
-        "https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_1280.jpg",
-    },
-    {
-      title: "Seatle Fish",
-      image:
-        "https://cdn.pixabay.com/photo/2021/03/14/11/14/fish-6093991_1280.jpg",
-    },
-    {
-      title: "Corona Fish",
-      image:
-        "https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg",
-    },
-  ]);
+  const [category, setCategory] = useState([]);
 
   useEffect(() => {
-    // getCategories()
-    //   .then((data) => {
-    //     if (data.error) {
-    //       console.log(data.error);
-    //     } else {
-    //       setCategory(data);
-    //     }
-    //   })
-    //   .catch((err) => {
-    //     alert(err);
-    //   });
+    getCategories()
+      .then((data) => {
+        if (data.error) {
+          console.log(data.error);
+        } else {
+          setCategory(data);
+        }
+      })
+      .catch((err) => {
+        alert(err);
+      });
   }, []);
 
   return (

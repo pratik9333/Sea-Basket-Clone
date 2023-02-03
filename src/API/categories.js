@@ -1,7 +1,7 @@
 import API from "../backend";
 
 export const getCategories = () => {
-  return fetch(`${API}/category`, { method: "GET" })
+  return fetch(`${API}`, { method: "GET" })
     .then((response) => {
       return response.json();
     })
